@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:background="#DDD"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="@+id/passwd"
+        app:layout_constraintTop_toBottomOf="@+id/passwd"
+        app:layout_constraintRight_toLeftOf="@+id/newAcc" />
+
+
+
+    <Button
+        android:id="@+id/newAcc"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+
+        android:layout_marginEnd="2dp"
+        android:background="#DDD"
+        android:text="Nowe Konto"
+        app:layout_constraintLeft_toRightOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="@+id/passwd"
+        app:layout_constraintTop_toBottomOf="@+id/passwd"/>
+
+    <TextView
+        android:id="@+id/login_button_highlight"
+        android:layout_width="85dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#22BB06"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn" />
+
+    <TextView
+        android:id="@+id/newacc_button_highlight"
+        android:layout_width="85dp"
+        android:layout_height="5dp"
+        android:background="#2866CE"
+        app:layout_constraintEnd_toEndOf="@+id/newAcc"
+        app:layout_constraintStart_toStartOf="@+id/newAcc"
+        app:layout_constraintTop_toBottomOf="@id/newAcc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

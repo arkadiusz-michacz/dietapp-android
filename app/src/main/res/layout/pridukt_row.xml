@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/task_status"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:background="#DDD"
+        android:text="\u2713"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/status_button_highlight"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#22BB06"
+        app:layout_constraintTop_toBottomOf="@id/task_status"
+        app:layout_constraintEnd_toEndOf="@id/task_status"
+        app:layout_constraintStart_toStartOf="@id/task_status" />
+
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:background="#7373EC"
+        app:layout_constraintEnd_toStartOf="@+id/editBtn"
+        app:layout_constraintStart_toEndOf="@+id/task_status"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="2dp"/>
+
+
+    <TextView
+        android:id="@+id/task_ckal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editBtn"
+        app:layout_constraintStart_toEndOf="@+id/task_ckalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/task_name" />
+
+    <TextView
+        android:id="@+id/task_ckalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalorie : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/task_ckal"
+        app:layout_constraintStart_toEndOf="@+id/task_status"
+        app:layout_constraintTop_toBottomOf="@+id/task_name"
+        android:layout_marginLeft="2dp"/>
+
+
+    <TextView
+        android:id="@+id/task_prot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="cccccccccccccccccc"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editBtn"
+        app:layout_constraintStart_toEndOf="@+id/task_protLabel"
+        app:layout_constraintTop_toBottomOf="@+id/task_ckal" />
+
+
+    <TextView
+        android:id="@+id/task_protLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Białko : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/task_prot"
+        app:layout_constraintStart_toEndOf="@+id/task_status"
+        app:layout_constraintTop_toBottomOf="@+id/task_ckalLabel"
+        android:layout_marginLeft="2dp"/>
+
+    <TextView
+        android:id="@+id/task_fat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ddddddddddddddddddddddddddddddddddddddddddddd"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editBtn"
+        app:layout_constraintStart_toEndOf="@+id/task_fatLabel"
+        app:layout_constraintTop_toBottomOf="@+id/task_prot" />
+
+    <TextView
+        android:id="@+id/task_fatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tłuszcz : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/task_fat"
+        app:layout_constraintStart_toEndOf="@+id/task_status"
+        app:layout_constraintTop_toBottomOf="@+id/task_protLabel"
+        android:layout_marginLeft="2dp"/>
+
+    <TextView
+        android:id="@+id/task_carb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editBtn"
+        app:layout_constraintStart_toEndOf="@+id/task_carbLabel"
+        app:layout_constraintTop_toBottomOf="@+id/task_fat" />
+
+    <TextView
+        android:id="@+id/task_carbLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Węglowodany : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/task_carb"
+        app:layout_constraintStart_toEndOf="@+id/task_status"
+        app:layout_constraintTop_toBottomOf="@+id/task_fatLabel"
+        android:layout_marginLeft="2dp"/>
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="#DDD"
+        android:text="edit"
+        android:minWidth="0dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edit_button_highlight"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#7373EC"
+        app:layout_constraintTop_toBottomOf="@id/editBtn"
+        app:layout_constraintEnd_toEndOf="@id/editBtn"
+        app:layout_constraintStart_toStartOf="@id/editBtn" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="#DDD"
+        android:text="del"
+        android:minWidth="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/del_button_highlight"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="#BC3306"
+        app:layout_constraintTop_toBottomOf="@id/deleteBtn"
+        app:layout_constraintEnd_toEndOf="@id/deleteBtn"
+        app:layout_constraintStart_toStartOf="@id/deleteBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
