@@ -416,7 +416,7 @@ public class ProduktAdapter extends ArrayAdapter<Produkt> implements Filterable 
                                             toastMssg.cancel();}*/
 
                                             Snackbar snackbar = Snackbar
-                                                    .make(v, "Om Nom Nom", Snackbar.LENGTH_SHORT);
+                                                    .make(parent/*v*/, "Om Nom Nom", Snackbar.LENGTH_SHORT);
                                             if(!snackbar.isShown())
                                                 snackbar.show();
 
